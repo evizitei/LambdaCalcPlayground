@@ -1,4 +1,5 @@
 
+-- Chapter 4 of Types and Programming Languages, "Arithmetic Expressions"
 module Src.ArithExpr where
 
 data Term = TmTrue 
