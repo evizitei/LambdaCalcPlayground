@@ -53,7 +53,7 @@ printTerm (TmAbs name bodyTerm) ctx =
     let (ctx', name') = pickFreshName ctx name in
     let bodyStr = printTerm bodyTerm ctx' in
     let Nm n_chr n_idx = name' in
-    "(λ" ++ (n_chr ++ show n_idx) ++ ". " ++ bodyStr ++ ")"
+    "(lambda " ++ (n_chr ++ show n_idx) ++ ". " ++ bodyStr ++ ")"
 printTerm (TmApp t1 t2) ctx =
     let t1Str = printTerm t1 ctx in
     let t2Str = printTerm t2 ctx in
